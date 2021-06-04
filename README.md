@@ -23,6 +23,8 @@ Data from the runs used in the paper is included [here](https://github.com/oxwhi
 
 ## Installing SMAC
 
+First create a python3.8 virtual environment.
+
 You can install SMAC by using the following command:
 
 ```shell
@@ -56,6 +58,7 @@ SMAC is composed of many combat scenarios with pre-configured maps. Before SMAC 
 
 Download the [SMAC Maps](https://github.com/oxwhirl/smac/releases/download/v0.1-beta1/SMAC_Maps.zip) and extract them to your `$SC2PATH/Maps` directory. If you installed SMAC via git, simply copy the `SMAC_Maps` directory from `smac/env/starcraft2/maps/` into `$SC2PATH/Maps` directory.
 
+For the MacOS version of the game the location is within the `Applications/StarCraft II/Maps/`.  You must place the SMAC Maps there.
 ### List the maps
 
 To see the list of SMAC maps, together with the number of ally and enemy units and episode limit, run:
