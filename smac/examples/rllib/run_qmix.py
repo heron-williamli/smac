@@ -20,9 +20,9 @@ from smac.examples.rllib.env import RLlibStarCraft2Env
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num-iters", type=int, default=100000)
-    parser.add_argument("--num-workers", type=int, default=3)
-    parser.add_argument("--map-name", type=str, default="8m")
+    parser.add_argument("--num-iters", type=int, default=100)
+    parser.add_argument("--num-workers", type=int, default=1)
+    parser.add_argument("--map-name", type=str, default="3m")
     args = parser.parse_args()
 
     def env_creator(smac_args):
@@ -53,5 +53,6 @@ if __name__ == "__main__":
                     },
                 },
             },
-        }
+        },
+        resume=True,
     )
